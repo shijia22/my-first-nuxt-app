@@ -2,6 +2,8 @@
   <div>
     <input type="text" v-model="pid" />
     <button @click="nextPage">前往</button>
+
+    <router-link to="/products">YA</router-link>
   </div>
 </template>
 
