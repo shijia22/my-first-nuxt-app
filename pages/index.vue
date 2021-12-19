@@ -1,9 +1,22 @@
 <template>
-  <Tutorial/>
+  <div>
+    <input type="text" v-model="pid" />
+    <button @click="nextPage">前往</button>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
-}
+  name: "IndexPage",
+  data() {
+    return {
+      pid: "",
+    };
+  },
+  methods: {
+    nextPage() {
+      this.$router.push('/products/' + this.pid)
+    },
+  },
+};
 </script>
