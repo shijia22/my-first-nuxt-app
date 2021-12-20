@@ -4,6 +4,7 @@
     <button @click="nextPage">前往</button>
 
     <router-link to="/products">YA</router-link>
+    <nuxt-link to="/products">nuxt link</nuxt-link>
   </div>
 </template>
 
